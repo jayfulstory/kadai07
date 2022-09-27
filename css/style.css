@@ -1,0 +1,595 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainContents .newsNext {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 4px;
+}
+
+.mainContents .newsNext:hover {
+  padding-right: 0;
+  transition: all 0.2s linear;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+header .logo {
+  height: 140px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo img {
+  width: 60px;
+  margin-top: 30px;
+}
+
+.logo h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+  font-style: italic;
+  margin: 0;
+}
+
+header .nav {
+  display: flex;
+}
+
+header .mainHome {
+  background: white;
+  flex: 1;
+}
+
+header .mainMenu {
+  flex: 3;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-left: 40px solid white;
+  border-bottom: 40px solid black;
+  height: 0;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainMenu a {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid black;
+  transition: all 0.2s linear;
+}
+
+.mainMenu a:hover {
+  color: #bbb;
+  border-bottom: 2px solid #bbb;
+}
+
+.mainMenu a #menuNow {
+  color: #bbb;
+  border-bottom: 2px solid #bbb;
+}
+
+header .mainSns {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 0;
+  line-height: 40px;
+  border-left: 40px solid black;
+  border-bottom: 40px solid gray;
+}
+
+.mainvisual {
+  width: 100%;
+  padding-top: 180px;
+}
+
+.mainvisual img {
+  width: 100%;
+}
+
+/* mainCOntents */
+
+.mainContents {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px 20px 0px;
+}
+
+.mainContents .news-cover {
+  display: flex;
+  height: 280px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.news-cover .mainNews {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-cover .mainNews .newsList {
+  background-color: white;
+  width: 100%;
+  height: 30%;
+  border-radius: 10px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.mainNews .newsList:hover {
+  transform: scale(0.98);
+  transition: all 0.2s linear;
+}
+
+.mainNews .newsList .newsTitle {
+  flex: 8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainNews .newsList .date {
+  flex: 2;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  color: gray;
+  text-align: right;
+}
+
+.mainContents .newsNext {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 4px;
+}
+
+.mainContents .newsNext:hover {
+  padding-right: 0;
+  transition: all 0.2s linear;
+}
+
+.mainContents .mainVideo {
+  width: 30%;
+}
+
+.mainContents .video-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainContents .mainVideo iframe {
+  width: 100%;
+  height: 240px;
+}
+
+.mainContents .mainDiscography {
+  width: 30%;
+  /* margin: 0 10px 0 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainContents .discography-main-cover {
+  height: 240px;
+  width: 100%;
+  background: white;
+  display: flex;
+}
+
+.mainDiscography .discography-main-cover img {
+  height: 100%;
+}
+
+.mainContents .discography-main-text {
+  margin: 20px 0 10px 20px;
+  line-height: 1.6;
+}
+
+.mainContents .discography-main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.discography-main-text .main-text-date {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 0;
+}
+.discography-main-text .main-text-album {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+.discography-main-text .main-text-view {
+  padding: 4px 8px 4px 8px;
+  border: 1px solid black;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  transition: all 0.4s;
+}
+.discography-main-text .main-text-view:hover {
+  transform: scale(0.96);
+}
+
+.footer-top {
+  width: 100%;
+}
+.footer-top .copyright {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  /* height: 100%; */
+  background-image: url('../image/footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 550px 0 20px 0;
+}
+.footer-top .copyright .sony-logo {
+  width: 20%;
+}
+
+.footer-top .copyright .sony-logo img {
+  cursor: pointer;
+  width: 120px;
+}
+
+.footer-top .copyright small {
+  width: 40%;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top .copyright .footerSns a {
+  width: 20%;
+  /* border: 0; */
+  /* outline: 0; */
+  padding-left: 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 28px;
+  /* margin-top: 2px; */
+  text-align: right;
+  margin-left: 8px;
+}
+
+.footer-top .copyright .footerSns a:hover {
+  color: gray;
+  transition: all 0.4s;
+}
+
+/* ************ NEWS ************** */
+
+.article-newsList {
+  padding-top: 215px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.article-newsList a {
+  background-color: white;
+  color: #444;
+  width: 100%;
+  height: 140px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px 10px 40px;
+  margin: 5px 0 5px 0;
+}
+.article-newsList a:hover {
+  background-color: black;
+  color: white;
+  margin: 5px 0 5px 7px;
+  transition: all 0.4s;
+}
+
+.article-newsList a .news-date {
+  width: 20%;
+  padding-right: 40px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.article-newsList a .news-text {
+  width: 70%;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.article-newsList a .news-icon {
+  width: 10%;
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.next #newsMore {
+  background-color: white;
+  color: #444;
+  width: 65%;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px 10px 40px;
+  margin: 20px 0px 160px 0;
+}
+
+.next #newsMore:hover {
+  background-color: #444;
+  color: #fff;
+  margin: 24px 0 156px 0;
+  transition: all 0.4s;
+}
+
+/* ************ Profile ************** */
+
+.profile {
+  padding-top: 220px;
+  margin-bottom: 160px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileName {
+  font-size: 48px;
+  color: #444;
+}
+
+.profile .profileText {
+  color: #444;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+  margin-top: 80px;
+  width: 70%;
+  line-height: 1.7;
+  padding: 60px 60px 120px 60px;
+}
+
+.profile .profileText h2 {
+  font-size: 48px;
+}
+
+/* ************* discography ********* */
+
+article {
+  padding-top: 220px;
+  margin-bottom: 160px;
+}
+
+.discography-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.discography-cover {
+  width: 900px;
+  margin: 60px 10px 60px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.discography-cover:hover img {
+  width: 74%;
+  transition: all 0.2s linear;
+}
+
+.discography-cover img {
+  width: 75%;
+}
+
+.discography-cover .discography-text {
+  width: 75%;
+  height: 100px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+.discography-cover .discography-text p {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 0;
+}
+.discography-cover .discography-text h2 {
+  font-size: 20px;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ************* store **************** */
+
+.article-store {
+  padding-top: 180px;
+  max-width: 2200px;
+  /* background-color: #f0f0f0; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.article-store .store-advice {
+  width: 50%;
+  border-radius: 5px;
+  background-color: rgb(220, 20, 20);
+  color: white;
+  margin-top: 40px;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+.article-store .store-listen {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  margin-top: 40px;
+}
+.article-store .store-buy {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  margin-top: 40px;
+}
+
+.article-store ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.article-store ul li {
+  padding: 20px 10px 20px 10px;
+}
+
+.article-store .store-list .store-items img {
+  width: 140px;
+  background-color: white;
+}
+
+.article-store .store-list .store-items a img {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.article-store .store-list .store-items a:hover img {
+  transform: scale(0.95);
+}
+
+.store-listen-heading {
+  font-size: 20px;
+  color: #444;
+  margin: 20px 0 0 20px;
+}
+
+.store-buy-heading {
+  font-size: 20px;
+  color: #444;
+  margin: 20px 0 0 20px;
+}
+
+/* ********** discography album ************* */
+
+.album {
+  padding-top: 220px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.album .album-cover {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0 40px 0;
+  margin-bottom: 160px;
+}
+
+.album-cover img {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.album .album-title {
+  font-size: 28px;
+}
+
+.album .album-date {
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+
+.album-cover ol {
+  padding: 0;
+}
+
+.album-song-list-item {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.album-song-list-item .album-song-track {
+  padding-right: 40px;
+}
+
+.album-cover .album-before {
+  margin-top: 40px;
+  color: gray;
+  font-size: 12px;
+  transition: all 0.2s linear;
+}
+
+.album-cover .album-before:hover {
+  padding-right: 4px;
+}
