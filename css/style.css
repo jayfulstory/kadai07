@@ -152,17 +152,16 @@ header .mainSns {
 }
 
 .mainNews .newsList .newsTitle {
-  flex: 8;
+  flex: 7.5;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 20px;
   font-size: 16px;
   font-weight: 400;
 }
 
 .mainNews .newsList .date {
-  flex: 2;
+  flex: 2.5;
   font-size: 12px;
   letter-spacing: 0.06em;
   font-weight: 100;
@@ -571,16 +570,28 @@ article {
 }
 
 .album-cover ol {
-  padding: 0;
+  margin-left: 380px;
+  width: 80%;
+}
+
+.album-cover ol li {
+  width: 100%;
+  list-style: none;
 }
 
 .album-song-list-item {
+  width: 100%;
   display: flex;
   padding-bottom: 20px;
 }
 
 .album-song-list-item .album-song-track {
-  padding-right: 40px;
+  width: 6%;
+  /* padding-right: 40px; */
+}
+.album-song-list-item .album-song-title {
+  width: 94%;
+  /* padding-right: 40px; */
 }
 
 .album-cover .album-before {
